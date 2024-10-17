@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./img/htmlicon.png" type="image/x-icon">
+    <title>Modelos de Caixas</title>
+    <style>
+        /*Informações:
+        user agent é sempre o navegador que está exibindo meu conteudo!*/
+        
+        /*margin: auto; para deixar no meio da tela*/
+
+        /*Simplificando os 'border' - 'padding' - 'margin' - 'outline'. Dá pra fazer issousando as shorthands, já foi esplicado aulas atrás*/
+      h1 { /*Box-level*/
+       
+        background-color: darkslategrey;
+        height: 300px;
+        width: 300px;
+        border-width: 10px;
+        border-style: solid;
+        border-color: black;
+
+        /*Ou pode ser igual está simplificado abaixo*/
+        border: 10px solid black;
+
+        padding-top: 10px;
+        padding-right: 10px;
+        padding-bottom: 10px;
+        padding-left: 10px;
+
+        /*Ou pode ser igual está simplificado abaixo*/
+        padding: 10px 10px 10px 10px;
+        /*Se todas as medidas forem iguais, pode se informar epenas 1 vez ex: padding: 10px*/
+
+        margin-top: 20px;
+        margin-right: 40px;
+        margin-bottom: 20px;
+        margin-left: 40px;
+        /*Ou pode ser igual está simplificado abaixo*/
+        margin: 20px 40px 20px 40px;
+
+        outline-width: 10px;
+        outline-style: dashed;
+        outline-color: gold;
+        /*Ou pode ser igual está simplificado abaixo*/
+        outline: 5px dashed gold;
+
+
+      }
+      a { /*inline-level*/
+        
+           border-width: 2.5px;
+           border-style: groove;
+           border-color: black;
+           /*Ou pode ser igual está simplificado abaixo*/
+           border: 2.5px groove black;
+
+           padding-top: 10px;
+           padding-right: 10px;
+           padding-bottom: 10px;
+           padding-left: 10px;
+           /*Ou pode ser igual está simplificado abaixo*/
+           padding: 10px 10px 10px 10px;
+           /*Se todas as medidas forem iguais, pode se informar epenas 1 vez ex: padding: 10px*/
+
+        }
+        /*display:inline; = voçe não consegue modificar nada
+          display:block; = voce consegue modificar
+          display:inline block = voçe consegue modificar um pouco, usa propriedades de um e de outro*/
+    </style>
+</head>
+<body>
+    <h1>Exemplo de caixa box-level</h1>
+    <p>Parágrafos também são exemplos de box-level, mas os <a href="@">Links são exemplos de caixa inline-level </a>Vamos ver como tudo isso funciona</p>
+    
+</body>
+</html>

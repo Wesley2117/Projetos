@@ -1,0 +1,34 @@
+/* Estilo básico para o botão */
+.animated-button {
+    background-color: #4CAF50; /* Verde */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    outline: none;
+    transition: background-color 0.3s ease; /* Transição suave para a cor de fundo */
+}
+
+/* Animação de pulso */
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.1);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+/* Estilo do botão ao passar o cursor */
+.animated-button:hover {
+    background-color: #45a049; /* Cor um pouco mais escura */
+    animation: pulse 1s infinite; /* Aplica a animação de pulso */
+}

@@ -1,0 +1,10 @@
+body {
+    background-color: black;
+    color: white;
+    font-family: ar;
+}
+img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+}

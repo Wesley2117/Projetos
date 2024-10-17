@@ -1,0 +1,13 @@
+h1 {
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+}
+
+footer {
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+
+
+}

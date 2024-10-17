@@ -1,0 +1,17 @@
+div {
+    display: inline-block;
+    background-color: rgb(255, 255, 255);
+    border: 1px solid black;
+    text-align: center;
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+}
+div:hover {
+    background-color: black;
+}
+p {
+    color: white;
+    padding-top: 50px;
+}
+
