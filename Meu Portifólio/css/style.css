@@ -7,6 +7,14 @@
     --bg-color-01: #1f242d;
     --bg-color-02: #323946;
     --color-00: #0000001a;
+
+    /*Extra*/
+    --color-01: #999999;
+    --color-02: #009539;
+    --color-03: #7950f2;
+    --color-04: #c00000;
+    --color-05: #232323;
+
 }
 
 *{
@@ -28,4 +36,19 @@ html{
         font-style: normal;
         font-size: 16px;
       }   
+}
+
+body {
+    background-color: var(--bg-color-01);
+    color: var(--text-color);
+}
+
+header{
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    padding-left: 1.1rem;
+    background-color: var(--color-01);
+    
 }
