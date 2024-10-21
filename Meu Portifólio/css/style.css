@@ -1,23 +1,22 @@
 /* Imports the Poppins font Google Fonts */
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
-:root{
+:root {
     --main-color: #00eeff;
     --text-color: #ffffff;
     --bg-color-01: #1f242d;
     --bg-color-02: #323946;
     --color-00: #0000001a;
 
-    /*Extra*/
+    /* Extra */
     --color-01: #999999;
     --color-02: #009539;
     --color-03: #7950f2;
     --color-04: #c00000;
     --color-05: #232323;
-
 }
 
-*{
+* {
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
@@ -27,15 +26,13 @@
     scroll-behavior: smooth;
 }
 
-
-
-html{
+html {
     .bebas-neue-regular {
         font-family: "Bebas Neue", serif;
         font-weight: 400;
         font-style: normal;
         font-size: 16px;
-      }   
+    }
 }
 
 body {
@@ -43,12 +40,231 @@ body {
     color: var(--text-color);
 }
 
-header{
+header {
     position: fixed;
     top: 0px;
     left: 0px;
     width: 100%;
     padding-left: 1.1rem;
-    background-color: var(--color-01);
-    
+    background-color: var(--bg-color-01);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+    border: solid 1px var(--color-02); /* test */
+}
+
+.logo {
+    font-size: 1.7rem;
+    color: var(--text-color);
+    font-weight: 600;
+    cursor: default;
+}
+
+.nav a {
+    font-size: 1.2rem;
+    color: var(--text-color);
+    padding: 0.5rem 1rem;
+    transition: 0.4s;
+    border: solid 1px var(--color-02); /* test */
+}
+
+.nav a:hover {
+    color: var(--main-color);
+}
+
+section {
+    min-height: 100vh;
+    padding: 6rem 6rem 2rem;
+    border: solid 1px var(--color-02); /* test */
+}
+
+span {
+    color: var(--main-color);
+}
+
+.home,
+.about {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.home-img {
+    border-width: 0.6rem; /* Largura da borda em todos os lados */
+    border-style: solid; /* Estilo da borda */
+    border-image: linear-gradient(135deg, transparent 50%, var(--main-color)) 1; /* Gradiente da borda */
+    border-image-slice: 1; /* Se necessário, ajuste este valor */
+}
+
+.home-img img,
+.about-img img {
+    width: 100%;
+}
+
+.about-img {
+    border-left: solid 0.6rem transparent; /* Define uma borda à esquerda */
+    border-top: solid 0.6rem transparent; /* Opcional: define uma borda superior */
+    border-bottom: solid 0.6rem transparent; /* Opcional: define uma borda inferior */
+    border-image: linear-gradient(225deg, transparent 50%, var(--main-color)) 1;
+}
+
+.about {
+    background-color: var(--bg-color-02);
+}
+
+.home-content,
+.about-content {
+    width: 45%;
+}
+
+.home-content h1,
+.about-content h1 {
+    font-weight: 700;
+    line-height: 1.3;
+    font-size: 2.7rem; /* test */
+}
+
+.home-content h3,
+.about-content h3 {
+    font-weight: 700;
+    font-size: 1.6rem;
+}
+
+.home-content p,
+.about-content p {
+    margin-top: 1.2rem;
+    text-align: justify;
+}
+
+.services h2,
+.portifolio h2,
+.contact h2 {
+    font-size: 2.2rem;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+.services-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.services-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 25rem;
+    margin-bottom: 1rem;
+}
+
+.services-container .services-box {
+    padding: 2rem 1rem 2.5rem;
+    border-radius: 1.2rem;
+    text-align: center;
+    border: solid 0.15rem var(--bg-color-01);
+    background-color: var(--bg-color-02);
+    transition: 0.5s ease;
+}
+
+.services-container .services-box:hover {
+    border-color: var(--main-color);
+    transform: scale(1.01);
+}
+
+.services-box i {
+    font-size: 4.3rem;
+    color: var(--main-color);
+}
+
+.services-box h3 {
+    font-size: 1.5rem;
+}
+
+.services-box p {
+    margin: 0.5rem;
+    letter-spacing: 0.1rem;
+    /* N lines ... */
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.portfolio {
+    background-color: var(--bg-color-02);
+}
+
+.portfolio-container {
+    display: grid;
+    gap: 1.3rem;
+}
+
+.portfolio-box {
+    position: relative;
+    border-radius: 0.6rem;
+    box-shadow: 0 0 0.6rem var(--bg-color-01);
+    overflow: hidden;
+    display: flex;
+}
+
+.portfolio-box img {
+    width: 100%;
+    transition: 0.5s ease;
+}
+
+.portfolio-box img:hover {
+    transform: scale(1.1);
+}
+
+.portfolio-box .portfolio-layer {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(transparent, var(--main-color));
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 0.4rem;
+    transform: translateY(30rem); /* Inicialmente fora da tela */
+    transition: 0.5s ease;
+    z-index: 1; /* Para garantir que esteja acima da imagem */
+}
+
+.portfolio-box:hover .portfolio-layer {
+    transform: translateY(0); /* Move a camada para a posição visível */
+}
+
+/*====button====*/
+.btn {
+    display: inline-block;
+    padding: 0.7rem 1.8rem;
+    background-color: var(--main-color);
+    border-radius: 2rem;
+    color: var(--bg-color-02);
+    font-weight: 600;
+    letter-spacing: 0.1rem;
+    transition: 0.3s ease;
+    margin-top: 1.2rem;
+}
+
+.btn:hover {
+    box-shadow: 0 0 0.3rem var(--main-color);
+    background-color: inherit;
+    color: var(--main-color);
+    cursor: pointer;
+}
+/*====button====*/
+
+footer {
+    background-color: var(--bg-color-02);
+    text-align: center;
+    padding: 1rem;
+    color: var(--text-color);
 }
