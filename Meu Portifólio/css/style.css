@@ -460,7 +460,48 @@ footer {
 }
 /* Medium (md): Tablet */
 @media (min-width: 768px) {
+    .menu-hamburguer {
+        display: none;
+    }
 
+    .nav{
+        display: block;
+    }
+
+    .nav-responsive, .nav-responsive a {
+        display: none;
+    }
+
+    .home, .about {
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+
+    .home-img, .about-img {
+        max-width: 35%;
+    }
+
+    .home-content, .about-content {
+        width: 50%;
+    }
+
+    /*.services-container{
+        flex-direction: column;
+        align-items: center;
+    }*/
+
+    .services-box {
+        width: 60%;
+        margin-bottom: 2rem;
+    }
+
+    .portfolio-container{
+        grid-template-columns: auto auto auto;
+    }
+
+    form .input-box input {
+        display: block; /*errroooooooooooooooooooooooooooooooooooooo*/
+    }
 
     header{
         background-color: var(--color-03); /*test*/
