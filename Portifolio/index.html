@@ -54,7 +54,7 @@
                 <a href="https://www.facebook.com/profile.php?id=100045046146594" target="_blank"><i class='bx bxl-facebook' ></i></a>
                 <a href="https://www.instagram.com/wesley.santos_16?igsh=ZnZzYnZnNWIxbzVt" target="_blank"><i class='bx bxl-instagram'></i></a>
                 <a href="https://www.linkedin.com/in/wesley-barros-0a2b20334?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank"><i class='bx bxl-linkedin'></i></a>
-                <a href="https://youtu.be/Y4DLlC3clPU?si=TjupKIRCx-slIjLf" target="_blank"><i class='bx bxl-youtube'></i></a>
+                <a href="https://github.com/Wesley2117" target="_blank"><i class='bx bxl-github'></i></a>
             </div>
 
             <div>
@@ -210,21 +210,21 @@
     <section class="contact" id="contact">
         <h2>Contact <span>Me!</span></h2>
 
-        <form action="">
+        <form id="contactForm">
             <div class="input-box">
-                <input type="text" placeholder="Full Name">
-                <input type="email" placeholder="E-mail">
+                <input type="text" name="full_name" placeholder="Full Name" required>
+                <input type="email" name="email" placeholder="E-mail" required>
             </div>
             
             <div class="input-box">
-                <input type="number" placeholder="Phone number">
-                <input type="text" placeholder="Subject">
+                <input type="number" name="phone" placeholder="Phone number" required>
+                <input type="text" name="subject" placeholder="Subject" required>
             </div>
-
-            <textarea cols="30" rows="8" placeholder="Message"></textarea> 
-
-            <a href="#" class="btn">Send Message</a>
+        
+            <textarea name="message" cols="30" rows="8" placeholder="Message" required></textarea> 
+            <button type="submit" class="btn">Send Message</button>
         </form>
+        
     </section>
     <!--end contact sections-->
 
