@@ -105,10 +105,10 @@ span {
 }
 
 .home-img {
-    border-width: 0.6rem; /* Largura da borda em todos os lados */
-    border-style: solid; /* Estilo da borda */
-    border-image: linear-gradient(135deg, transparent 50%, var(--main-color)) 1; /* Gradiente da borda */
-    border-image-slice: 1; /* Se necessário, ajuste este valor */
+    border-right: solid 0.6rem transparent; /* Define uma borda à esquerda */
+    border-top: solid 0.6rem transparent; /* Opcional: define uma borda superior */
+    border-bottom: solid 0.6rem transparent; /* Opcional: define uma borda inferior */
+    border-image: linear-gradient(138deg, transparent 50%, var(--main-color)) 1;
 }
 
 .home-img img,

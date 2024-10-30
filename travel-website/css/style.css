@@ -51,7 +51,7 @@ nav {
     justify-content: space-between;
     align-items: center;
 
-    background-color: var(--cor-principal);
+    
     /*background-color: var(--cor-principal-alpha);*/
     padding: 0.6rem 3rem;
     color: var(--cor-01);
@@ -68,7 +68,7 @@ nav {
     font-size: 1.5rem;
 }
 
-.menu a{
+.menu a, .drop-content{
     text-decoration: none;
     color: var(--cor-01);
     font-weight: 700;
@@ -78,7 +78,7 @@ nav {
     /*border: solid 2px yellow;*/
 }
 
-.menu a:hover {
+.menu a:hover, .drop-content a:hover {
     color: var(--cor-destaque);
 }
 
@@ -433,3 +433,172 @@ footer hr{
     height: 3rem;
     background-color: var(--cor-principal);
 }
+
+
+/*==== menu hamburguer ====*/
+.drop-menu{
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+}
+
+.drop-button {
+    padding: 0;
+    padding-bottom: 0.25rem;
+    background-color: inherit;
+
+    /*border: solid 1px red;*/
+}
+
+.barra {
+    width: 2rem;
+    height: 0.28rem;
+    transition: 0.3s;
+    margin-top: 0.3rem;
+    border-radius: 0.2rem;
+    background-color: var(--cor-01);
+}
+
+.drop-content {
+    display: none;
+    position: absolute;
+    z-index: 1;
+    top: 3rem;
+    right: 0;
+    background-color: var(--cor-principal-alpha);
+    /*background-color: var(--cor-principal);*/
+    box-shadow: var(--sombra);
+}
+
+.drop-content a{
+    display: block;
+}
+
+.drop-content a:hover{
+    color: var(--cor-destaque);
+}
+
+.drop-menu:hover .drop-content {
+    display: block;
+}
+
+/*==== end menu hamburguer ====*/
+
+
+
+
+/*==== media quaries*/
+/* Extra Small (xs) Smartphone (portrait) */
+@media (min-width: 0px){
+    /*--- navbar ---*/
+    nav{
+        padding: 0;
+        padding-left: 1rem;
+        /*background-color: var(--cor-principal);*/
+        background-color: red
+    }
+
+    .drop-content{
+        background-color: var(--cor-principal);
+    }
+
+    .menu{
+        display: none;
+    }
+
+    .drop-menu{
+        display: block;
+    }
+
+    /*--- header ---*/
+    .titulo{
+        font-size: 1.8rem;
+    }
+
+    .booking{
+        padding: 0.8rem;
+    }
+
+    .booking form {
+        flex-direction: column;
+    }
+
+    form input{
+        width: 100%;
+        margin-bottom: 0.6rem;
+    }
+
+    section {
+        padding: 6rem 2rem;
+    }
+
+    /*passeios*/
+    .passeios{
+        flex-direction: column;
+    }
+
+    .fotos-passeios {
+        margin-top: 3rem;
+    }
+
+    .foto{
+        width: 100%;
+    }
+
+    /*--- destinos ---*/
+    .grupo-destinos{
+        display: flex;
+        flex-direction: column;
+        padding: 0;
+    }
+
+    /*avaliaçoes*/
+    .avaliacoes{
+        width: 1005;
+    }
+
+    .carrossel{
+        padding: 0;
+    }
+
+    /*footer*/
+    footer {
+        padding: 2rem;
+        flex-direction: column;
+    }
+
+    footer h3 {
+        margin-top: 2rem;
+    }
+
+    .empresa p{
+        margin: 1rem 0;
+    }
+}
+
+
+/* Small (sm) Smartphone (Landscape) */
+@media (min-width: 576px){
+    section{
+        padding: 6rem 4rem;
+    }
+
+    nav{
+        background-color: green;
+    }
+}
+
+
+/* Medium (md): Tablet */
+@media (min-width: 768px) {
+}
+
+
+/* Large (lg): Notebook */
+@media (min-width: 992px){
+}
+
+
+/* Extra Large (lg): Desktop */
+@media (min-width: 1200px){
+}
+/*==== end media quaries*/
