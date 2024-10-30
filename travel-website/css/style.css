@@ -63,6 +63,10 @@ nav {
     left: 0;
 }
 
+.navbar-solida {
+    background-color: var(--cor-principal);
+}
+
 .logo{
     font-family: var(--fonte-secundaria);
     font-size: 1.5rem;
@@ -294,8 +298,6 @@ section{
     min-height: 50vh;
     margin: 1rem auto;
     padding: 6rem 3rem 2rem;
-
-    border: solid green;
 }
 
 .avaliacoes h1{
@@ -493,8 +495,6 @@ footer hr{
     nav{
         padding: 0;
         padding-left: 1rem;
-        /*background-color: var(--cor-principal);*/
-        background-color: red
     }
 
     .drop-content{
@@ -582,23 +582,111 @@ footer hr{
         padding: 6rem 4rem;
     }
 
-    nav{
-        background-color: green;
-    }
 }
 
 
 /* Medium (md): Tablet */
 @media (min-width: 768px) {
+    section{
+        padding: 6rem 2rem;
+    }
+
+    .booking{
+        padding: 0.8rem 3rem;
+    }
+
+
+    .foto{
+        width: calc(50% - 0.5rem);
+    }
+
+    .grupo-destinos{
+        padding: 0;
+        display: grid;
+        grid-template-columns: auto auto;
+        gap: 3rem 1.2rem;
+    }
+
+    footer{
+        padding: 2rem 6rem;
+    }
 }
 
 
 /* Large (lg): Notebook */
 @media (min-width: 992px){
+    nav{
+        padding: 0.6rem 3rem;
+        background-color: var(--cor-principal-alpha);
+    }
+
+    .menu {
+        display: block;
+    }
+
+    .drop-menu{
+        display: none;
+    }
+
+    .titulo{
+        font-size: 2rem;
+    }
+
+    .booking{
+        padding: 0.8rem 3rem;
+    }
+
+    .booking form {
+        flex-direction: row;
+        align-items: last baseline;
+    }
+
+    form input {
+        width: 80%;
+    }
+
+    section {
+        padding: 6rem 3rem;
+    }
+
+    .passeios {
+        flex-direction: row;
+    }
+
+    .info-passeios{
+        padding-right: 3rem;
+    }
+
+    .foto{
+        width: 100%;
+    }
+
+    .avaliacoes{
+        width: 75%;
+    }
+
+    footer{
+        flex-direction: row;
+    }
+
+    footer h3{
+        margin-top: 0;
+    }
 }
 
 
 /* Extra Large (lg): Desktop */
 @media (min-width: 1200px){
+    .foto{
+        width: calc(50% - 0.5rem);
+    }
+
+    .grupo-destinos{
+        grid-template-columns: auto auto auto;
+    }
+
+    .carrossel{
+        padding: 0 5rem;
+    }
 }
 /*==== end media quaries*/
