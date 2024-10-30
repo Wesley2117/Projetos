@@ -50,6 +50,7 @@ nav {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+    transition: background-color 0.5s ease;
 
     
     /*background-color: var(--cor-principal-alpha);*/

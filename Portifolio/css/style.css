@@ -255,6 +255,10 @@ span {
     transform: translateY(0); /* Move a camada para a posição visível */
 }
 
+.portfolio-layer{
+    color: black;
+}
+
 .portfolio-layer h4 {
     font-size: 1.8rem;
 }
