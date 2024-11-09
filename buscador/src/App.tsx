@@ -1,3 +1,4 @@
+// App.tsx
 import { useState } from 'react';
 import { FiSearch } from 'react-icons/fi';
 import './style.css';
@@ -14,38 +15,36 @@ type Cep = {
 
 function App() {
   const [input, setInput] = useState('');
-  const [cep, setCep] = useState<Cep | null>(null); // Usa o tipo `Cep` e inicializa como null
+  const [cep, setCep] = useState<Cep | null>(null);
 
   async function handleSearch() {
     if (input === '') {
-      alert("Insira algum CEP!");
+      alert('Insira algum CEP!');
       return;
     }
 
-    // Remove caracteres não numéricos
     const formattedInput = input.replace(/\D/g, '');
 
     if (formattedInput.length !== 8) {
-      alert("CEP inválido! Certifique-se de digitar 8 dígitos.");
+      alert('CEP inválido! Certifique-se de digitar 8 dígitos.');
       return;
     }
 
     try {
       const response = await api.get(`${formattedInput}/json`);
 
-      // Verifica se o CEP existe no retorno da API
       if (response.data.erro) {
-        alert("CEP não encontrado!");
-        setCep(null); // Define como null caso o CEP não seja encontrado
+        alert('CEP não encontrado!');
+        setCep(null);
         return;
       }
 
-      setCep(response.data); // Define os dados do CEP
+      setCep(response.data);
       setInput('');
     } catch (error) {
-      console.error("Erro ao buscar o CEP:", error);
+      console.error('Erro ao buscar o CEP:', error);
       alert('Ops, erro ao buscar. Verifique o CEP e tente novamente.');
-      setCep(null); // Define como null em caso de erro
+      setCep(null);
       setInput('');
     }
   }
@@ -70,10 +69,10 @@ function App() {
       {cep && (
         <main className="main">
           <h2>CEP: {cep.cep}</h2>
-          <span>{cep.logradouro || "Logradouro não disponível"}</span>
-          <span>Complemento: {cep.complemento || "Complemento não disponível"}</span>
-          <span>{cep.bairro || "Bairro não disponível"}</span>
-          <span>{cep.localidade ? `${cep.localidade} - ${cep.uf}` : "Localidade não disponível"}</span>
+          <span>{cep.logradouro || 'Logradouro não disponível'}</span>
+          <span>Complemento: {cep.complemento || 'Complemento não disponível'}</span>
+          <span>{cep.bairro || 'Bairro não disponível'}</span>
+          <span>{cep.localidade ? `${cep.localidade} - ${cep.uf}` : 'Localidade não disponível'}</span>
         </main>
       )}
     </div>
