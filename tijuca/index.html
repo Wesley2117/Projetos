@@ -86,23 +86,22 @@
     <!--fim do intuito-->
 
     <!--visita-->
-    <section class="visita" id="visita">
-        <h2>Preencha o campo abaixo e fale conosco</h2>
+    <section class="contact" id="contact">
+        <h2>Contact <span>Me!</span></h2>
 
-        <form action="">
+        <form id="contactForm">
             <div class="input-box">
-                <input type="text" placeholder="Nome Completo">
-                <input type="email" placeholder="E-mail">
+                <input type="text" name="full_name" placeholder="Full Name" required>
+                <input type="email" name="email" placeholder="E-mail" required>
             </div>
             
             <div class="input-box">
-                <input type="number" placeholder="Seu Celular">
-                <input type="text" placeholder="Local que deseja visitar">
+                <input type="number" name="phone" placeholder="Phone number" required>
+                <input type="text" name="subject" placeholder="Subject" required>
             </div>
-
-            <textarea cols="30" rows="8" placeholder="Message"></textarea> 
-
-            <a href="#" class="btn">Enviar Mensagem</a>
+        
+            <textarea name="message" cols="30" rows="8" placeholder="Message" required></textarea> 
+            <button type="submit" class="btn">Send Message</button>
         </form>
     </section>
     <!--fim da visita-->
