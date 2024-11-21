@@ -6,6 +6,14 @@
     font-family: 'Arial', sans-serif;
 }
 
+:root {
+    --color-2: #dfdb08;
+    --text-color: #ffffff;
+    --bg-color-01: #1f242d;
+    --bg-color-02: #323946;
+    --color-1: #0623a7;
+}
+
 body {
     font-size: 16px;
     line-height: 1.6;
@@ -18,7 +26,7 @@ nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #4CAF50;
+    background-color: var(--color-1);
     padding: 1rem 2rem;
     color: #fff;
 }
@@ -54,7 +62,7 @@ nav a:hover {
 
 .sobre-content .box1 h2,
 .sobre-content .box2 h2 {
-    color: #4CAF50;
+    color: var(--color-1);
     margin-bottom: 1rem;
 }
 
@@ -68,7 +76,7 @@ nav a:hover {
 }
 
 .sobre-content .box2 h3 {
-    color: #4CAF50;
+    color: var(--color-1);
     margin-bottom: 0.5rem;
 }
 
@@ -98,7 +106,7 @@ nav a:hover {
 }
 
 .intuito-content h2 {
-    color: #4CAF50;
+    color: var(--color-1);
     margin-bottom: 1rem;
 }
 
@@ -115,7 +123,7 @@ nav a:hover {
 }
 
 .visita h2 {
-    color: #4CAF50;
+    color: var(--color-1);
     margin-bottom: 2rem;
 }
 
@@ -144,7 +152,7 @@ textarea {
 
 .input-box input:focus,
 textarea:focus {
-    border-color: #4CAF50;
+    border-color: var(--color-1);
 }
 
 textarea {
@@ -154,7 +162,7 @@ textarea {
 .btn {
     display: inline-block;
     padding: 0.75rem 1.5rem;
-    background-color: #4CAF50;
+    background-color: var(--color-1);
     color: #fff;
     text-decoration: none;
     border-radius: 5px;
@@ -163,7 +171,7 @@ textarea {
 }
 
 .btn:hover {
-    background-color: #388E3C;
+    background-color: var(--color-2);
 }
 
 /* Responsividade */

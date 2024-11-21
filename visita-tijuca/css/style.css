@@ -1,0 +1,693 @@
+
+/*Impostar as fontes do google fonts*/
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Lobster&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/*Definição de variaveis*/
+:root {
+    /*Fonts*/
+    --fonte-principal: "Poppins", sans-serif;
+    --fonte-secundaria: "Lobster", sans-serif;
+
+
+    /*paleta de cores*/
+    --cor-principal: #000dc7;
+    --cor-destaque:#ffad32;
+    --cor-principal-alpha: #747dff3c;
+    --cor-gradiente-01: #ffe7c2;
+    --cor-gradiente-02: #bdacff;
+    --cor-01: #f9f9f9;
+    --cor-02: #b8c0c7;
+    --cor-03: #767f86;
+    --cor-04: #3c4852;
+    --cor-05: #00000043;
+
+
+    /*Box shadow*/
+    --sombra: 0 0.3rem 0.4rem 0.1rem var(--cor-05);
+
+}
+
+/*Limpa as configuraçoes padrão dos navegadores*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+html {
+    font-family: var(--fonte-principal);
+    font-size: 18px;
+}
+
+body {
+    color: var(--cor-04);
+}
+
+/* ==== barra de navegação fixa, com Menu ==== */
+nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    transition: background-color 0.5s ease;
+
+    
+    /*background-color: var(--cor-principal-alpha);*/
+    padding: 0.6rem 3rem;
+    color: var(--cor-01);
+    letter-spacing: 0.1rem;
+    position: fixed;
+    width: 100%;
+    z-index: 10;
+    top: 0;
+    left: 0;
+}
+
+.navbar-solida {
+    background-color: var(--cor-principal);
+}
+
+.logo{
+    font-family: var(--fonte-secundaria);
+    font-size: 1.5rem;
+}
+
+.menu a, .drop-content{
+    text-decoration: none;
+    color: var(--cor-01);
+    font-weight: 700;
+    padding: 0.6rem 1rem;
+    transition: 0,5s;
+
+    /*border: solid 2px yellow;*/
+}
+
+.menu a:hover, .drop-content a:hover {
+    color: var(--cor-destaque);
+}
+
+/*-- ==== banner e calendario ==== --*/
+header {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-image: url(../img/banner.jpg);
+    background-size: cover;
+    background-position: 50% 50%;
+    height: 96vh;
+}
+
+header div {
+    width: 100%;
+}
+
+.titulo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--cor-01);
+    font-size: 2rem;
+    font-weight: 700;
+    letter-spacing: 0.1rem;
+    word-spacing: 0.5rem;
+    height: 100%;
+    /*eixo x    eixo y   cor*/
+    text-shadow: 0.2rem 0 0.2rem var(--cor-04);
+}
+
+.booking {
+    background-color: var(--cor-principal-alpha);
+    padding: 0.8rem 3rem;
+}
+
+.booking form {
+    background-color: var(--cor-01);
+    color: var(--cor-03);
+    padding: 1rem 1.4rem;
+    display: flex;
+    align-items: end;
+    border-radius: 0.2rem;
+}
+
+form label {
+    display: block;
+}
+
+form input {
+    font-size: 0.8rem;
+    width: 80%;
+    padding: 0.5rem;
+    border-radius: 0.3rem;
+    border: solid 0.1rem var(--cor-02);
+}
+
+button{
+    background-color: var(--cor-destaque);
+    color: var(--cor-01);
+    font-size: 1rem;
+    font-weight: 700;
+    padding: 0.6rem 1.6rem;
+    border-radius: 0.5rem;
+    border: none;
+    transition: 0.3s;
+}
+
+button .booking{
+    width: 10%;
+}
+
+button:hover{
+    background-color: var(--cor-principal);
+    cursor: pointer;
+}
+
+section{
+    margin: 2.5rem auto;
+    padding: 6rem 3rem;
+    min-height: 100vh;
+}
+
+/*==== sections: passeios ====*/
+.passeios {
+    display: flex;
+}
+
+.passeios h1{
+    font-family: var(--fonte-secundaria);
+    color: var(--cor-principal);
+}
+
+.passeios hr{
+    margin: 1rem 0;
+    border: solid var(--cor-destaque);
+    border-radius: 1rem;
+    width: 15rem;
+}
+
+.passeios p{
+    margin: 1rem 0;
+}
+
+.info-passeios {
+    text-align: justify;
+    padding-right: 3rem;
+    flex: 1;
+}
+
+.fotos-passeios {
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    flex: 1;
+}
+
+.foto{
+    width: calc(50% - 0.5rem);
+    border: solid 0.6rem var(--cor-01);
+    border-radius: 0.5rem;
+    box-shadow: var(--sombra);
+}
+
+.foto img{
+    width: 100%;
+    display: flex;
+}
+
+/*==== sections destinos ====*/
+.destinos{
+    background: linear-gradient(
+        50deg,
+        var(--cor-gradiente-01),
+        var(--cor-gradiente-02)
+    );
+}
+
+.destinos h1{
+    font-family: var(--fonte-secundaria);
+    text-align: center;
+    color: var(--cor-principal);
+    padding-bottom: 1rem;
+}
+
+.grupo-destinos{
+    padding: 3rem;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 3rem 1.2rem; 
+}
+
+.card-destino {
+    padding: 0.8rem;
+    display: flex;
+    flex-direction: column;
+    background-color: var(--cor-01);
+    border-radius: 0.5rem;
+    box-shadow: var(--sombra);
+}
+
+.card-destino img{
+    width: 100%;
+    height: 100%;
+    border-radius: 0.3rem;
+}
+
+.card-destino > div{
+    padding: 1rem;
+}
+
+.card-destino span{
+    font-size: 1.2rem;
+    font-weight: 700;
+}
+
+.card-destino p{
+    margin: 1rem 0;
+    text-align: justify;
+    color: var(--cor-03);
+}
+
+.valor{
+    display: flex;
+    justify-content: end;
+    align-items: baseline;
+    margin: 1rem auto;
+}
+
+.valor div {
+    display: flex;
+    justify-content: start;
+    align-items: end;
+}
+
+.valor span {
+    text-decoration: line-through;
+    font-size: 0.8rem;
+    color: var(--cor-03);
+    margin-left: 0.5rem;
+}
+
+.card-btn{
+    text-align: right;
+}
+
+/*Section avaliacoes*/
+.avaliacoes {
+    text-align: center;
+    width: 75%;
+    min-height: 50vh;
+    margin: 1rem auto;
+    padding: 6rem 3rem 2rem;
+}
+
+.avaliacoes h1{
+    font-family: var(--fonte-secundaria);
+    color: var(--cor-principal);
+}
+
+.avaliacoes p{
+    margin: 1rem auto;
+    color: var(--cor-03);
+}
+
+.avaliacoes img {
+    border: solid 0.2rem var(--cor-destaque);
+    border-radius: 50%;
+    background-color: var(cor --cor-destaque);
+    outline: none;
+    width: 10rem;
+}
+
+.avaliacoes span{
+    font-weight: 700;
+}
+
+.carrossel {
+    position: relative;
+    padding: 0.5rem;
+    margin: auto;
+}
+
+.carrossel button{
+    position: absolute;
+    top: 50%;
+    transform: translateX(-50%);
+    background-color: var(--cor-05);
+    color: var(--cor-01);
+    border: none;
+    cursor: pointer;
+    padding: 0.5rem;
+    transition: 0.3s;
+}
+
+.carrossel button:hover{
+    background-color: var(--cor-03);
+}
+
+.anterior {
+    left: 0;
+}
+
+.proximo{
+    right: 0;
+}
+
+/*==== rodapé====*/
+footer {
+    background-color: var(--cor-04);
+    color: var(--cor-02);
+    padding: 2rem 5rem;
+    display: flex;
+    font-size: 0.8rem;
+}
+
+footer div {
+    flex: 1;
+    padding: 0 0.3rem;
+
+    /*border: solid 1px yellow;*/
+}
+
+footer h3{
+    margin-bottom: 1rem;
+    text-transform: uppercase;
+}
+
+footer .input-group {
+    display: flex;
+    gap: 0.5rem;
+    margin: 1rem 0 1.5rem;
+}
+
+footer input {
+    background-color: var(--cor-01);
+    color: var(--cor-04);
+    letter-spacing: 0.1rem;
+    padding: 0.5rem;
+    border: none;
+    border-radius: 0.1rem;
+    width: 100%;
+}
+
+footer button{
+    padding: 0.3rem 1.4rem;
+    border-radius: 0.3rem;
+}
+
+footer hr{
+    margin:  1rem 0;
+}
+
+.empresa p{
+    margin: 2rem 0;
+}
+
+.empresa span{
+    font-weight: 700;
+    display: block;
+}
+
+.rede-social {
+    display: flex;
+    gap: 1rem;
+}
+
+.rede-social i{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 2rem;
+    height: 2rem;
+    font-size: 1.2rem;
+    border: solid 0.15rem;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.rede-socila i:hover{
+    color: var(--cor-destaque);
+    border-color: var(--cor-destaque);
+}
+
+.rodape {
+    width: 100%;
+    height: 3rem;
+    background-color: var(--cor-principal);
+}
+
+
+/*==== menu hamburguer ====*/
+.drop-menu{
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+}
+
+.drop-button {
+    padding: 0;
+    padding-bottom: 0.25rem;
+    background-color: inherit;
+
+    /*border: solid 1px red;*/
+}
+
+.barra {
+    width: 2rem;
+    height: 0.28rem;
+    transition: 0.3s;
+    margin-top: 0.3rem;
+    border-radius: 0.2rem;
+    background-color: var(--cor-01);
+}
+
+.drop-content {
+    display: none;
+    position: absolute;
+    z-index: 1;
+    top: 3rem;
+    right: 0;
+    background-color: var(--cor-principal-alpha);
+    /*background-color: var(--cor-principal);*/
+    box-shadow: var(--sombra);
+}
+
+.drop-content a{
+    display: block;
+}
+
+.drop-content a:hover{
+    color: var(--cor-destaque);
+}
+
+.drop-menu:hover .drop-content {
+    display: block;
+}
+
+/*==== end menu hamburguer ====*/
+
+
+
+
+/*==== media quaries*/
+/* Extra Small (xs) Smartphone (portrait) */
+@media (min-width: 0px){
+    /*--- navbar ---*/
+    nav{
+        padding: 0;
+        padding-left: 1rem;
+    }
+
+    .drop-content{
+        background-color: var(--cor-principal);
+    }
+
+    .menu{
+        display: none;
+    }
+
+    .drop-menu{
+        display: block;
+    }
+
+    /*--- header ---*/
+    .titulo{
+        font-size: 1.8rem;
+    }
+
+    .booking{
+        padding: 0.8rem;
+    }
+
+    .booking form {
+        flex-direction: column;
+    }
+
+    form input{
+        width: 100%;
+        margin-bottom: 0.6rem;
+    }
+
+    section {
+        padding: 6rem 2rem;
+    }
+
+    /*passeios*/
+    .passeios{
+        flex-direction: column;
+    }
+
+    .fotos-passeios {
+        margin-top: 3rem;
+    }
+
+    .foto{
+        width: 100%;
+    }
+
+    /*--- destinos ---*/
+    .grupo-destinos{
+        display: flex;
+        flex-direction: column;
+        padding: 0;
+    }
+
+    /*avaliaçoes*/
+    .avaliacoes{
+        width: 1005;
+    }
+
+    .carrossel{
+        padding: 0;
+    }
+
+    /*footer*/
+    footer {
+        padding: 2rem;
+        flex-direction: column;
+    }
+
+    footer h3 {
+        margin-top: 2rem;
+    }
+
+    .empresa p{
+        margin: 1rem 0;
+    }
+}
+
+
+/* Small (sm) Smartphone (Landscape) */
+@media (min-width: 576px){
+    section{
+        padding: 6rem 4rem;
+    }
+
+}
+
+
+/* Medium (md): Tablet */
+@media (min-width: 768px) {
+    section{
+        padding: 6rem 2rem;
+    }
+
+    .booking{
+        padding: 0.8rem 3rem;
+    }
+
+
+    .foto{
+        width: calc(50% - 0.5rem);
+    }
+
+    .grupo-destinos{
+        padding: 0;
+        display: grid;
+        grid-template-columns: auto auto;
+        gap: 3rem 1.2rem;
+    }
+
+    footer{
+        padding: 2rem 6rem;
+    }
+}
+
+
+/* Large (lg): Notebook */
+@media (min-width: 992px){
+    nav{
+        padding: 0.6rem 3rem;
+        background-color: var(--cor-principal-alpha);
+    }
+
+    .menu {
+        display: block;
+    }
+
+    .drop-menu{
+        display: none;
+    }
+
+    .titulo{
+        font-size: 2rem;
+    }
+
+    .booking{
+        padding: 0.8rem 3rem;
+    }
+
+    .booking form {
+        flex-direction: row;
+        align-items: last baseline;
+    }
+
+    form input {
+        width: 80%;
+    }
+
+    section {
+        padding: 6rem 3rem;
+    }
+
+    .passeios {
+        flex-direction: row;
+    }
+
+    .info-passeios{
+        padding-right: 3rem;
+    }
+
+    .foto{
+        width: 100%;
+    }
+
+    .avaliacoes{
+        width: 75%;
+    }
+
+    footer{
+        flex-direction: row;
+    }
+
+    footer h3{
+        margin-top: 0;
+    }
+}
+
+
+/* Extra Large (lg): Desktop */
+@media (min-width: 1200px){
+    .foto{
+        width: calc(50% - 0.5rem);
+    }
+
+    .grupo-destinos{
+        grid-template-columns: auto auto auto;
+    }
+
+    .carrossel{
+        padding: 0 5rem;
+    }
+}
+/*==== end media quaries*/
