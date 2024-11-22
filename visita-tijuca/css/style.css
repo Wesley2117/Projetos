@@ -11,7 +11,7 @@
 
     /*paleta de cores*/
     --cor-principal: #000dc7;
-    --cor-destaque:#ffad32;
+    --cor-destaque:#ffd900;
     --cor-principal-alpha: #747dff3c;
     --cor-gradiente-01: #ffe7c2;
     --cor-gradiente-02: #bdacff;
@@ -75,7 +75,7 @@ nav {
 
 .menu a, .drop-content{
     text-decoration: none;
-    color: var(--cor-01);
+    color: var(--cor-05);
     font-weight: 700;
     padding: 0.6rem 1rem;
     transition: 0,5s;
@@ -92,7 +92,7 @@ header {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    background-image: url(../img/banner.jpg);
+    background-image: url(../img/frango.png);
     background-size: cover;
     background-position: 50% 50%;
     height: 96vh;
@@ -122,7 +122,7 @@ header div {
 }
 
 .booking form {
-    background-color: var(--cor-01);
+    background-color: var(--cor-principal);
     color: var(--cor-03);
     padding: 1rem 1.4rem;
     display: flex;
