@@ -399,6 +399,11 @@ footer hr{
     margin:  1rem 0;
 }
 
+footer i{
+    background-color: var(--cor-05);
+    color: var(--cor-principal);
+}
+
 .empresa p{
     margin: 2rem 0;
 }
