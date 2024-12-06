@@ -1,0 +1,9 @@
+/* Estilo adicional */
+body {
+    font-family: 'Arial', sans-serif;
+}
+header {
+    background-image: url('./assets/bg.jpg');
+    background-size: cover;
+    background-position: center;
+}

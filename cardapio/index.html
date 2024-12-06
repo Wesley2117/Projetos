@@ -32,7 +32,7 @@
     <!--INICIO MENU-->
     <div id="menu">
 
-        <main>
+        <main class="grid grid-cols-1 mx-auto gap-7 max-w-7xl">
         
             <!--PRODUTOS ITEM-->
             <div class="flex gap-2">
@@ -44,8 +44,10 @@
 
                     <div class="flex items-center justify-between gap-2 mt-3">
                         <p class="text-lg font-bold">R$ 18,90</p>
-                        <button class="px-5 bg-gray-900 rounded add-to-cart-btn">
-                            <i class="text-lg text-black fa fa-cart-plus" aria-hidden="true"></i>
+                        <button class="px-5 bg-gray-900 rounded add-to-cart-btn" data-name="hamburguer Smash" data-price="18,90">
+
+                            
+                            <i class="text-lg text-white fa fa-cart-plus" aria-hidden="true"></i>
                         </button>
                     </div>
 
@@ -53,8 +55,29 @@
 
             </div>
             <!--FIM PRODUTOS ITEM-->
-
-
+            
+            <!--PRODUTOS ITEM-->
+                        <div class="flex gap-2">
+                            <img src="./assets/hamb-2.png" alt="hamburguer Duplo" class="duration-300 rounded-md w-28 h-28 hover:scale-110 hover:-rotate-2">
+            
+                            <div>
+                                <p class="font-bold">hamburguer Duplo</p>
+                                <p class="text-sm">Pão levinho de fermentação natural de trigo, buguer de pato 160kg, queijo de bode e maionese de casa</p>
+            
+                                <div class="flex items-center justify-between gap-2 mt-3">
+                                    <p class="text-lg font-bold">R$ 32,90</p>
+                                    <button class="px-5 bg-gray-900 rounded add-to-cart-btn" data-name="hamburguer Duplo" data-price="32,90">
+            
+                                        
+                                        <i class="text-lg text-white fa fa-cart-plus" aria-hidden="true"></i>
+                                    </button>
+                                </div>
+            
+                            </div>
+            
+                        </div>
+            <!--FIM PRODUTOS ITEM-->
+            
         </main>
         
     </div>
