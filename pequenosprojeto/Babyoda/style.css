@@ -1,9 +1,0 @@
-:root {
-    --green: #b7ca81;
-    --green-light: #a0d6a1;
-    --pink: #d08791;
-}
-
-html {
-    background: linear-gradient(to bottom right, #dde8e2aa, #ddd9c5aa);
-}
