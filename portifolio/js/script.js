@@ -38,3 +38,5 @@ document.getElementById("contactForm").addEventListener("submit", function(event
     // Redireciona para o WhatsApp
     window.open(whatsappUrl, "_blank");
 });
+
+
