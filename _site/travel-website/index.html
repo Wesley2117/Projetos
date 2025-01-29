@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta author="Wesley Barros">
+    <meta description="Website de viagens">
+    <meta keywords="html, css, javascript, website, site, responsivo, viagem, turismo">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wesley Viagens!!</title>
+    <link rel="shortcut icon" href="./img/icon.png" type="image/x-icon">
+    <!--font por link-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <!--css-->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- ==== barra de navegação fixa, com Menu ==== -->
+    <nav>
+        <div class="logo">Wesley viagens!</div>
+        <div class="menu">
+            <a href="#home">Home</a>
+            <a href="#passeios">Passeios</a>
+            <a href="#destinos">Destinos</a>
+            <a href="#avaliacoes">Avaliações</a>
+        </div>
+
+        <!--Menu Responsivo-->
+        <div class="drop-menu">
+            <div class="drop button">
+                <div class="barra"></div>
+                <div class="barra"></div>
+                <div class="barra"></div>
+            </div>
+
+            <!--conteudo do submenu-->
+            <div class="drop-content">
+                <a href="#home">Home</a>
+                <a href="#passeios">Passeios</a>
+                <a href="#destinos">Destinos</a>
+                <a href="#avaliacoes">Avaliações</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- ==== banner e calendario ==== -->
+    <header>
+        <div class="titulo">
+            Explore the world!
+        </div>
+
+        <div class="booking">
+            <form>
+                <div>
+                    <label for="destino">Where are we going?</label>
+                    <input type="text" id="destino">
+                </div>
+
+                <div>
+                    <label for="partida">When?</label>
+                    <input type="date" id="partida">
+                </div>
+
+                <div>
+                    <label for="retorno">Return</label>
+                    <input type="date" id="retorno">
+                </div>
+
+                <button type="button">Search</button>
+            </form>
+        </div>
+    </header>
+
+    <!-- ==== passeios ==== -->
+    <section class="passeios" id="passeios">
+        <div class="info-passeios">
+            <h1>Upcoming Tours and Destinations</h1>
+
+            <hr>
+            
+            <p>If the customer is very smart, he or she will be able to achieve the desired result. Rejecting pains and sufferings, the needs of pleasures said, they provide nothing for these present conveniences, with a great desire for pleasure, they leave no flexibility! As a result, they are softened by life. The company itself is a very successful company. A wise man forsakes pains, but he is harsher than pleasuresIf the customer is very smart, he or she will be able to achieve the desired result. Rejecting pains and sufferings, the needs of pleasures said, they provide nothing for these present conveniences, with a great desire for pleasure, they leave no flexibility! As a result, they are softened by life. The company itself is a very successful company. A wise man forsakes pains, but he is harsher than pleasures</p>
+
+            <button>Learn more</button>
+        </div>
+
+        <div class="fotos-passeios">
+            <div class="foto">
+                <img src="./img/travel01.jpg" alt="passeio1">
+            </div>
+
+            <div class="foto">
+                <img src="./img/travel02.jpg" alt="passeio2">
+            </div>
+
+            <div class="foto">
+                <img src="./img/travel03.jpg" alt="passeio3">
+            </div>
+
+            <div class="foto">
+                <img src="./img/travel04.jpg" alt="passeio4">
+            </div>
+        </div>
+    </section>
+    
+    <!-- ==== destinos ==== -->
+    <section class="destinos" id="destinos">
+        <h1>Where do you want to travel?</h1>
+        
+        <div class="grupo-destinos">
+            
+            <!--Destinos 1 -->
+            <div class="card-destino">
+                <img src="./img/Barcelona.jpg" alt="Barcelona">
+
+                <div>
+                    <span>Barcelona</span>, Spain
+
+                    <p>The company itself is a very successful company. See, wise men, there are times when no one is in great trouble. Do not run away, never, which I will explain, result in the right to refuse the opportunity at that time. The company itself is a very successful company. See, wise men, there are times when no one is in great trouble. Do not run</p>
+                    
+                    <div class="valor">
+                        <h3>R$ 3.900,00</h3>
+                        <span>R$ 4.400,00</span>
+                    </div>
+
+                    <div class="card-btn">
+                        <button>Learn more</button>
+                    </div>
+                </div>
+            </div>
+            
+            <!--Destinos 2 -->
+            <div class="card-destino">
+                <img src="./img/Porto.jpg" alt="Porto">
+
+                <div>
+                    <span>Port</span>, Portugal
+
+                    <p>The company itself is a very successful company. See, wise men, there are times when no one is in great trouble. Do not run away, never, which I will explain, result in the right to refuse the opportunity at that time. The company itself is a very successful company. See, wise men, there are times when no one is in great trouble. Do not run</p>
+                    
+                    <div class="valor">
+                        <h3>R$ 3.700,00</h3>
+                        <span>R$ 4.300,00</span>
+                    </div>
+
+                    <div class="card-btn">
+                        <button>Learn more</button>
+                    </div>
+                </div>
+            </div>
+            
+            <!--Destinos 3 -->
+            <div class="card-destino">
+                <img src="./img/Milan.jpg" alt="Milan">
+
+                <div>
+                    <span>Milan</span>, Italy
+
+                    <p>The company itself is a very successful company. See, wise men, there are times when no one is in great trouble. Do not run away, never, which I will explain, result in the right to refuse the opportunity at that time. The company itself is a very successful company. See, wise men, there are times when no one is in great trouble. Do not run</p>
+                    
+                    <div class="valor">
+                        <h3>R$ 3.500,00</h3>
+                        <span>R$ 4.200,00</span>
+                    </div>
+
+                    <div class="card-btn">
+                        <button>Learn more</button>
+                    </div>
+                </div>
+            </div>
+            
+            <!--Destinos 4 -->
+            <div class="card-destino">
+                <img src="./img/London.jpeg" alt="Londres">
+
+                <div>
+                    <span>London</span>, England
+
+                    <p>The company itself is a very successful company. See, wise men, there are times when no one is in great trouble. Do not run away, never, which I will explain, result in the right to refuse the opportunity at that time. The company itself is a very successful company. See, wise men, there are times when no one is in great trouble. Do not run</p>
+                    
+                    <div class="valor">
+                        <h3>R$ 4.200,00</h3>
+                        <span>R$ 4.900,00</span>
+                    </div>
+
+                    <div class="card-btn">
+                        <button>Learn more</button>
+                    </div>
+                </div>
+            </div>
+            
+            <!--Destinos 5 -->
+            <div class="card-destino">
+                <img src="./img/Lauterbrunnen.jpeg" alt="Lauterbrunnen">
+
+                <div>
+                    <span>Lauterbrunnen</span>, Switzerland
+
+                    <p>The company itself is a very successful company. See, wise men, there are times when no one is in great trouble. Do not run away, never, which I will explain, result in the right to refuse the opportunity at that time. The company itself is a very successful company. See, wise men, there are times when no one is in great trouble. Do not run</p>
+                    
+                    <div class="valor">
+                        <h3>R$ 3.900,00</h3>
+                        <span>R$ 4.300,00</span>
+                    </div>
+
+                    <div class="card-btn">
+                        <button>Learn more</button>
+                    </div>
+                </div>
+            </div>
+            
+            <!--Destinos 6 -->
+            <div class="card-destino">
+                <img src="./img/Paris.jpg" alt="Paris">
+
+                <div>
+                    <span>Paris</span>, France
+
+                    <p>The company itself is a very successful company. See, wise men, there are times when no one is in great trouble. Do not run away, never, which I will explain, result in the right to refuse the opportunity at that time. The company itself is a very successful company. See, wise men, there are times when no one is in great trouble. Do not run</p>
+                    
+                    <div class="valor">
+                        <h3>R$ 4,500,00</h3>
+                        <span>R$ 5.300,00</span>
+                    </div>
+
+                    <div class="card-btn">
+                        <button>Learn more</button>
+                    </div>
+                </div>
+            </div>
+            <!-- end all destinos-->
+        </div>
+    </section>
+
+
+    
+
+    <!-- ==== avaliações ==== -->
+    <section class="avaliacoes" id="avaliacoes">
+        <h1>Customer Reviews</h1>
+        <div class="carrossel">
+            <div class="clientes">
+                <p>The customer himself, the customer will be able to pursue the adipiscing of the company...</p>
+                <img src="./img/cliente01.png" alt="cliente 1">
+                <p><span>Patricia</span>, Jornalista</p>
+            </div>
+            
+            <div class="clientes">
+                <p>The customer himself, the customer will be able to pursue the adipiscing of the company...</p>
+                <img src="./img/cliente02.png" alt="cliente 2">
+                <p><span>Isabel</span>, Médica</p>
+            </div>
+    
+            <div class="clientes">
+                <p>The customer himself, the customer will be able to pursue the adipiscing of the company...</p>
+                <img src="./img/cliente03.png" alt="cliente 3">
+                <p><span>Alexandre</span>, Advogado</p>
+            </div>
+    
+            <button class="anterior">&#10094;</button>
+            <button class="proximo">&#10095;</button>
+        </div>
+    </section>
+    
+    
+    <!-- ==== rodapé ==== -->
+    <footer>
+        <div class="empresa">
+            <h1 class="logo">Wesley viagens!</h1>
+            
+            <p><span>Wesley Viagens & Turismo S.A</span>
+            Ponta dagua 3, 000 Beberibe, Ceara</p>
+
+            <p>Wesley Viagens & Turismos S.A. &copy; Todos os direitos reservados 2024</p>
+        </div>
+        
+        <div class="parceiros">
+            <h3>Nossos Parceiros</h3>
+
+            <p>Google</p>
+            <p>Apple</p>
+            <p>Sansug</p>
+            <p>Motorola</p>
+            <p>Dell</p>
+            <p>Acer</p>
+            <p>Netflix</p>
+        </div>
+        
+        <div class="newsletter">
+            <h3>Assine a Nossa Newsletter</h3>
+
+            <div class="input-group">
+                <input type="text" placeholder="Informe seu E-mail">
+                <button>Assinar</button>
+            </div>
+
+            <hr>
+
+            <h3>Siga nossas redes Sociais</h3>
+
+            <div class="rede-social">
+                <i class="fa-brands fa-facebook-f"></i>
+                <i class="fa-brands fa-instagram"></i>
+                <i class="fa-brands fa-youtube"></i>
+            </div>
+        </div>
+    </footer>
+    
+    <div class="rodape"></div>
+</body>
+
+<script src="./js/script.js"></script>
+</html>
