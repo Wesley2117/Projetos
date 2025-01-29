@@ -1,2 +1,4 @@
 exclude:
-  - node_modules
+  - node_modules/
+  - site-vendas/node_modules/
+  - **/CHANGELOG.md
