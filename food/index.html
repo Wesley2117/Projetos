@@ -4,7 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <title>You food</title>
+    <title>You Food</title>
+    <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
     <header>
@@ -13,13 +14,11 @@
 
             <ul id="nav_list">
                 <li class="nav-item">
-                    <a href="#home">início</a>
+                    <a href="#home">Início</a>
                 </li>
-
                 <li class="nav-item">
-                    <a href="#menu">Cardapio</a>
+                    <a href="#menu">Cardápio</a>
                 </li>
-
                 <li class="nav-item">
                     <a href="#testimonials">Avaliações</a>
                 </li>
@@ -37,13 +36,11 @@
         <div id="mobile_menu">
             <ul id="mobile_nav_list">
                 <li class="nav-item">
-                    <a href="#home">início</a>
+                    <a href="#home">Início</a>
                 </li>
-
                 <li class="nav-item">
-                    <a href="#menu">Cardapio</a>
+                    <a href="#menu">Cardápio</a>
                 </li>
-
                 <li class="nav-item">
                     <a href="#testimonials">Avaliações</a>
                 </li>
@@ -53,8 +50,65 @@
                 Peça aqui
             </button>
         </div>
-
     </header>
-    
+
+    <!-- Home Section -->
+    <section id="home" class="section">
+        <div class="container">
+            <h1>Bem-vindo ao You Food!</h1>
+            <p>O melhor lugar para saborear seus pratos favoritos. Navegue pelo cardápio e faça seu pedido agora!</p>
+            <button class="btn-primary">Comece Agora</button>
+        </div>
+    </section>
+
+    <!-- Menu Section -->
+    <section id="menu" class="section">
+        <div class="container">
+            <h2>Nosso Cardápio</h2>
+            <div class="menu-items">
+                <div class="menu-item">
+                    <img src="https://via.placeholder.com/300x200" alt="Prato 1">
+                    <h3>Hambúrguer Clássico</h3>
+                    <p>Delicioso hambúrguer com queijo e bacon.</p>
+                </div>
+                <div class="menu-item">
+                    <img src="https://via.placeholder.com/300x200" alt="Prato 2">
+                    <h3>Batata Frita</h3>
+                    <p>Crocante e deliciosa, perfeita para acompanhar.</p>
+                </div>
+                <div class="menu-item">
+                    <img src="https://via.placeholder.com/300x200" alt="Prato 3">
+                    <h3>Milkshake</h3>
+                    <p>O melhor milkshake, feito na hora.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="section">
+        <div class="container">
+            <h2>O que nossos clientes dizem</h2>
+            <div class="testimonials">
+                <div class="testimonial">
+                    <p>"A melhor experiência gastronômica que já tive!"</p>
+                    <span>- João Silva</span>
+                </div>
+                <div class="testimonial">
+                    <p>"Comida maravilhosa e entrega rápida!"</p>
+                    <span>- Maria Souza</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 You Food. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="./js/script.js"></script>
 </body>
 </html>
